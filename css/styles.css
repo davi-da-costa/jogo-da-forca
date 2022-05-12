@@ -1,0 +1,43 @@
+.logo {
+  height: 48px;
+  width: 32px;
+  background-image: url("../img/logo.png");
+  z-index: 1;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.content {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20vh;
+  width: 368px;
+  max-width: 368px;
+}
+
+.start, .new_word {
+  border-radius: 20px;
+  height: 9vh;
+  margin: 0 20px;
+}
+
+.start {
+  background-color: #0A3871;
+  color: white;
+  border: none;
+}
+
+.new_word {
+  border: 1px solid #0A3871;
+  color: #0A3871;
+}

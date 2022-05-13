@@ -69,7 +69,7 @@ function adivinha(letters) {
         document.querySelector(".right_leg").style.visibility = "visible"
         setTimeout(() => {
           alert("Você perdeu...\nTente novamente!")
-          document.location.reload()
+          window.open("game.html", "_self")
         }, 700)
       } else if (
         document.querySelector(".right_arm").style.visibility === "visible"
@@ -99,7 +99,7 @@ function adivinha(letters) {
     if(palavra_adivinhada) {
       setTimeout(() => {
         alert("Parabéns!")
-        document.location.reload()
+        window.open("game.html", "_self")
       }, 700)
     }
   })

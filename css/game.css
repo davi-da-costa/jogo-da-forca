@@ -185,7 +185,9 @@ body {
   color: transparent;
   background-color: transparent;
   position: fixed;
-  z-index: -1;
+  top: 0;
+  width: 1px;
+  height: 1px;
 }
 
 .fake_input:focus {

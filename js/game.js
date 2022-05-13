@@ -1,4 +1,4 @@
-let words = {}
+let letras_digitadas = []
 
 function lePalavras() {
   let word = ""
@@ -36,6 +36,19 @@ function lePalavras() {
 
 function adivinha(letters) {
   document.querySelector("html").addEventListener("keypress", (e) => {
+    let letra_digitada = false
+    for (let letra in letras_digitadas) {
+      if (letras_digitadas[letra] === e.key.toUpperCase()) {
+        letra_digitada = true
+      }
+    }
+
+    if(!letra_digitada) {
+      let p = document.createElement("p")
+      p.textContent = e.key.toUpperCase()
+      document.querySelector(".past_letters").appendChild(p)
+      letras_digitadas.push(e.key.toUpperCase())
+    }
     let letra_valida = false
     let palavra_adivinhada = true
     
@@ -46,9 +59,6 @@ function adivinha(letters) {
           break
         }
         letter_div.textContent = letters[i].toUpperCase()
-        let p = document.createElement("p")
-        p.textContent = letters[i].toUpperCase()
-        document.querySelector(".past_letters").appendChild(p)
         letra_valida = true
       }
     }

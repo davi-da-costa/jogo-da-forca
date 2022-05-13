@@ -153,18 +153,36 @@ body {
   display: flex;
 }
 
+.past_letters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: rgb(53, 53, 53);
+  margin-top: 20px;
+}
+
+.past_letters p {
+  margin-right: 15px;
+}
+
 .letter {
   height: 90%;
   width: 12%;
   max-width: 30px;
   border-bottom: 5px solid #0a3871;
   margin: 0 10px;
-  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 150%;
   font-family: Arial, Helvetica, sans-serif;
   color: #0a3871;
+  display: none;
+}
+
+.resultado {
+  margin-top: 20px;
+  font-size: 1.2rem;
   visibility: hidden;
 }
 

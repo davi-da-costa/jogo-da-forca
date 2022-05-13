@@ -76,6 +76,7 @@ body {
   height: 60px;
   margin: 0 20px;
   width: 100%;
+  cursor: pointer;
 }
 
 .save {

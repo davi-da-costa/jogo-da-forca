@@ -22,13 +22,13 @@ function lePalavras() {
       console.log('entries:', entries)
       word = entries[Math.floor(Math.random() * (entries.length))]
       console.log('word:', word)
-      document.querySelector(".dica").textContent = word[1]
+      document.querySelector(".dica").textContent = word[1].toUpperCase()
     })
     .then(() => {
       let letters = [...word[0]]
       for (let i = 0; i < letters.length; i++) {
         let letter_div = document.getElementById(`l${i + 1}`)
-        letter_div.style.visibility = "visible"
+        letter_div.style.display = "flex"
       }
       adivinha(letters)
     });
@@ -42,7 +42,13 @@ function adivinha(letters) {
     for (let i = 0; i < letters.length; i++) {
       let letter_div = document.getElementById(`l${i + 1}`)
       if (e.key === letters[i].toLowerCase()) {
+        if (letter_div.textContent === letters[i].toUpperCase()) {
+          break
+        }
         letter_div.textContent = letters[i].toUpperCase()
+        let p = document.createElement("p")
+        p.textContent = letters[i].toUpperCase()
+        document.querySelector(".past_letters").appendChild(p)
         letra_valida = true
       }
     }
@@ -52,12 +58,9 @@ function adivinha(letters) {
       ) {
         document.querySelector(".right_leg").style.visibility = "visible"
         setTimeout(() => {
-          if (window.confirm("Você perdeu :(\nGostaria de tentar novamente?")) {
-            document.location.reload()
-          } else {
-            document.querySelector('html').removeEventListener()
-          }
-        }, 500)
+          alert("Você perdeu...")
+          document.location.reload()
+        }, 700)
       } else if (
         document.querySelector(".right_arm").style.visibility === "visible"
       ) {

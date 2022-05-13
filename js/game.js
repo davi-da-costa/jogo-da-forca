@@ -1,9 +1,5 @@
 let letras_digitadas = []
 
-document.querySelector('html').addEventListener("click", () => {
-  document.querySelector('.fake_input').focus()
-})
-
 function lePalavras() {
   let word = ""
 
@@ -105,5 +101,9 @@ function adivinha(letters) {
     }
   })
 }
+
+document.querySelector('html').addEventListener("click", () => {
+  document.querySelector('.fake_input').focus()
+})
 
 lePalavras()

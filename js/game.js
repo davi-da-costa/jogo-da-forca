@@ -1,4 +1,5 @@
 let letras_digitadas = []
+document.querySelector('.fake_input').value = ""
 
 function lePalavras() {
   let word = ""

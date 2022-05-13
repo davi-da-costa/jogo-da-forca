@@ -1,5 +1,9 @@
 let letras_digitadas = []
 
+document.querySelector('html').addEventListener("click", () => {
+  document.querySelector('.fake_input').focus()
+})
+
 function lePalavras() {
   let word = ""
   console.log(sessionStorage)

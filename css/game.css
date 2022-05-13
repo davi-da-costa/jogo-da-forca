@@ -180,10 +180,8 @@ body {
   display: none;
 }
 
-.resultado {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  visibility: hidden;
+.fake_input {
+  display: none;
 }
 
 .buttons {

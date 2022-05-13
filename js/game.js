@@ -68,7 +68,7 @@ function adivinha(letters) {
       ) {
         document.querySelector(".right_leg").style.visibility = "visible"
         setTimeout(() => {
-          alert("Você perdeu...")
+          alert("Você perdeu...\nTente novamente!")
           document.location.reload()
         }, 700)
       } else if (

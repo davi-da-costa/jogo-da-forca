@@ -32,7 +32,7 @@ function lePalavras() {
 }
 
 function adivinha(letters) {
-  document.querySelector("html").addEventListener("keypress", (e) => {
+  document.querySelector("html").addEventListener("keyup", (e) => {
     let letra_digitada = false
     for (let letra in letras_digitadas) {
       if (letras_digitadas[letra] === e.key.toUpperCase()) {

@@ -6,7 +6,6 @@ document.querySelector('html').addEventListener("click", () => {
 
 function lePalavras() {
   let word = ""
-  console.log(sessionStorage)
 
   fetch("../words.json")
     .then((res) => res.json())
@@ -23,9 +22,7 @@ function lePalavras() {
           entries.push([key.toLowerCase(), sessionStorage[key].toUpperCase()])
         }
       }
-      console.log('entries:', entries)
       word = entries[Math.floor(Math.random() * (entries.length))]
-      console.log('word:', word)
       document.querySelector(".dica").textContent = word[1].toUpperCase()
     })
     .then(() => {

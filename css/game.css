@@ -181,7 +181,7 @@ body {
 }
 
 .fake_input {
-  display: none;
+  visibility: hidden;
 }
 
 .buttons {

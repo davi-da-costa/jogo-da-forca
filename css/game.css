@@ -181,7 +181,14 @@ body {
 }
 
 .fake_input {
-  visibility: hidden;
+  border: none;
+  color: transparent;
+  position: fixed;
+}
+
+.fake_input:focus {
+  outline: none;
+  caret-color: transparent;
 }
 
 .buttons {

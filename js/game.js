@@ -2,12 +2,26 @@ let words = {}
 
 function lePalavras() {
   let word = ""
+  console.log(sessionStorage)
 
   fetch("../words.json")
     .then((res) => res.json())
     .then((res) => {
       let entries = Object.entries(res)
-      word = entries[Math.ceil(10 * Math.random(entries.length - 1))]
+      for(let key in sessionStorage) {
+        if([...key].length <= 8
+        && key != 'length'
+        && key != 'clear'
+        && key != 'getItem'
+        && key != 'key'
+        && key != 'setItem'
+        ){
+          entries.push([key.toLowerCase(), sessionStorage[key].toUpperCase()])
+        }
+      }
+      console.log('entries:', entries)
+      word = entries[Math.floor(Math.random() * (entries.length))]
+      console.log('word:', word)
       document.querySelector(".dica").textContent = word[1]
     })
     .then(() => {

@@ -25,6 +25,9 @@
           <div class="head"></div>
         </div>
       </div>
+      <div class="dica_container">
+        <p>Dica: <span class="dica"></span></p>
+      </div>
       <div class="word">
         <div class="letter" id="l1"></div>
         <div class="letter" id="l2"></div>
@@ -36,9 +39,12 @@
         <div class="letter" id="l8"></div>
       </div>
       <div class="buttons">
-        <button class="new_game"><a href="./game.html">Novo jogo</a></button>
+        <button class="new_game" onclick="newGame"><a href="./game.html">Novo jogo</a></button>
         <button class="giveup"><a href="../index.html">Desistir</a></button>
       </div>
     </div>
+
+    <script type="text/json" src="../words.json"></script>
+    <script type="text/javascript" src="../js/game.js"></script>
   </body>
 </html>

@@ -82,6 +82,7 @@ body {
   position: relative;
   top: -135%;
   left: 59%;
+  visibility: hidden;
 }
 
 .left_arm {
@@ -92,6 +93,7 @@ body {
   transform: rotate(30deg);
   top: -31%;
   left: 61%;
+  visibility: hidden;
 }
 
 .right_arm {
@@ -102,6 +104,7 @@ body {
   transform: rotate(-30deg);
   top: -49%;
   left: 69%;
+  visibility: hidden;
 }
 
 .trunk {
@@ -111,6 +114,7 @@ body {
   height: 44px;
   top: -66%;
   left: 65%;
+  visibility: hidden;
 }
 
 .left_leg {
@@ -121,6 +125,7 @@ body {
   transform: rotate(30deg);
   top: -68%;
   left: 61%;
+  visibility: hidden;
 }
 
 .right_leg {
@@ -131,6 +136,12 @@ body {
   transform: rotate(-30deg);
   top: -86%;
   left: 69%;
+  visibility: hidden;
+}
+
+.dica_container {
+  color: #0a3871;
+  font-size: 1.5rem;
 }
 
 .word {
@@ -148,6 +159,13 @@ body {
   max-width: 30px;
   border-bottom: 5px solid #0a3871;
   margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0a3871;
+  visibility: hidden;
 }
 
 .buttons {

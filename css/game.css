@@ -185,11 +185,13 @@ body {
   color: transparent;
   background-color: transparent;
   position: fixed;
+  z-index: -1;
 }
 
 .fake_input:focus {
   outline: none;
   caret-color: transparent;
+  background-color: transparent;
 }
 
 .buttons {

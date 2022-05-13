@@ -32,26 +32,28 @@ function lePalavras() {
 }
 
 function adivinha(letters) {
-  document.querySelector("html").addEventListener("keyup", (e) => {
+  let input = document.querySelector(".fake_input")
+  input.addEventListener("input", (e) => {
     let letra_digitada = false
+    let value = [...e.target.value]
     for (let letra in letras_digitadas) {
-      if (letras_digitadas[letra] === e.key.toUpperCase()) {
+      if (letras_digitadas[letra] === value[value.length - 1].toUpperCase()) {
         letra_digitada = true
       }
     }
 
     if(!letra_digitada) {
       let p = document.createElement("p")
-      p.textContent = e.key.toUpperCase()
+      p.textContent = value[value.length - 1].toUpperCase()
       document.querySelector(".past_letters").appendChild(p)
-      letras_digitadas.push(e.key.toUpperCase())
+      letras_digitadas.push(value[value.length - 1].toUpperCase())
     }
     let letra_valida = false
     let palavra_adivinhada = true
     
     for (let i = 0; i < letters.length; i++) {
       let letter_div = document.getElementById(`l${i + 1}`)
-      if (e.key === letters[i].toLowerCase()) {
+      if (value[value.length - 1] === letters[i].toLowerCase()) {
         if (letter_div.textContent === letters[i].toUpperCase()) {
           break
         }

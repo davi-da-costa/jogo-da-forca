@@ -25,35 +25,21 @@
   max-width: 368px;
 }
 
-.buttons a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding-top: 20px;
-  text-decoration: none;
-}
-
-.start, .new_word {
+.btn-primary,
+.btn-secondary {
   border-radius: 20px;
   height: 9vh;
   margin: 0 20px;
+  cursor: pointer;
 }
 
-.start {
+.btn-primary {
   background-color: #0A3871;
   color: white;
   border: none;
 }
 
-.start a {
-  color: white;
-}
-
-.new_word {
+.btn-secondary {
   border: 1px solid #0A3871;
-  color: #0A3871;
-}
-
-.new_word a {
   color: #0A3871;
 }

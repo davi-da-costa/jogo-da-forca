@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jogo da Forca</title>
     <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/add-word.css" />
   </head>
   <body>
     <div class="content">
       <div class="logo"></div>
       <textarea name="field_word" class="field_word" placeholder="Digite uma palavra, e na linha de baixo uma dica para a palavra"></textarea>
+      <p class="error_container"></p>
       <p class="rule"><i class="fa-solid fa-circle-exclamation exclamation"></i></i>Max. de 8 letras</p>
       <div class="buttons">
-        <button class="save">Salvar e começar</button>
-        <button class="cancel">Cancelar</button>
+        <button class="btn-primary">Salvar e começar</button>
+        <button class="btn-secondary">Cancelar</button>
       </div>
     </div>
 

@@ -144,6 +144,13 @@ body {
   font-size: 1.5rem;
 }
 
+.error_container {
+  height: 50px;
+  color: red;
+  font-size: 1.5rem;
+  margin-top: 4vh;
+}
+
 .word {
   height: 15%;
   width: 100%;
@@ -160,6 +167,7 @@ body {
   font-size: 1.2rem;
   color: rgb(53, 53, 53);
   margin-top: 20px;
+  height: 35px;
 }
 
 .past_letters p {
@@ -203,25 +211,20 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
+  height: unset;
+  max-width: unset;
+  margin-top: -2vh;
 }
 
-.buttons a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding-top: 20px;
-  text-decoration: none;
-}
-
-.new_game,
-.giveup {
+.btn-primary,
+.btn-secondary {
   border-radius: 20px;
   height: 60px;
   margin: 0 20px;
   width: 100%;
 }
 
-.new_game {
+.btn-primary {
   background-color: #0a3871;
   color: white;
   border: none;
@@ -229,16 +232,8 @@ body {
   margin-top: 15px;
 }
 
-.new_game a {
-  color: white;
-}
-
-.giveup {
+.btn-secondary {
   border: 1px solid #0a3871;
-  color: #0a3871;
-}
-
-.giveup a {
   color: #0a3871;
 }
 

@@ -6,15 +6,6 @@ body {
   min-height: 464px;
 }
 
-.logo {
-  height: 48px;
-  width: 32px;
-  background-image: url("../img/logo.png");
-  position: fixed;
-  top: 10px;
-  left: 10px;
-}
-
 .content {
   height: 82vh;
   width: 85vw;
@@ -44,6 +35,12 @@ body {
   outline: none;
 }
 
+.error_container {
+  height: 50px;
+  color: red;
+  font-size: 1.3rem;
+}
+
 .rule, .exclamation {
   align-self: flex-start;
 }
@@ -60,18 +57,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  height: unset;
+  max-width: unset;
 }
 
-.buttons a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding-top: 20px;
-  text-decoration: none;
-}
-
-.save,
-.cancel {
+.btn-primary,
+.btn-secondary {
   border-radius: 20px;
   height: 60px;
   margin: 0 20px;
@@ -79,24 +70,17 @@ body {
   cursor: pointer;
 }
 
-.save {
+.btn-primary {
   background-color: #0a3871;
   color: white;
   border: none;
 }
 
-.save a {
-  color: white;
-}
-
-.cancel {
+.btn-secondary {
   border: 1px solid #0a3871;
   color: #0a3871;
 }
 
-.cancel a {
-  color: #0a3871;
-}
 
 @media only screen and (min-width: 525px) {
   .buttons {

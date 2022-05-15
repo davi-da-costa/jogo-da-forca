@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jogo da Forca</title>
     <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/game.css" />
   </head>
   <body>
@@ -40,13 +41,13 @@
       </div>
       <div class="past_letters"></div>
       <input class="fake_input" type="text">
+      <p class="error_container"></p>
       <div class="buttons">
-        <button class="new_game" onclick="newGame"><a href="./game.html">Novo jogo</a></button>
-        <button class="giveup"><a href="../index.html">Desistir</a></button>
+        <button class="btn-primary">Novo jogo</button>
+        <button class="btn-secondary">Desistir</button>
       </div>
     </div>
 
-    <script type="text/json" src="../words.json"></script>
     <script type="text/javascript" src="../js/game.js"></script>
   </body>
 </html>

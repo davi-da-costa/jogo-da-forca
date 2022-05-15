@@ -78,7 +78,7 @@ function adivinha(letters) {
         document.querySelector(".left_leg").style.visibility === "visible"
       ) {
         document.querySelector(".right_leg").style.visibility = "visible"
-        error_container.textContent = "Você perdeu... Tente novamente!"
+        error_container.textContent = "TENTE NOVAMENTE..."
         input.style.display = "none"
         playSound('error')
         document.querySelector('.fake_input').blur()

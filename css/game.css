@@ -147,7 +147,7 @@ body {
 .error_container {
   height: 50px;
   color: red;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-top: 4vh;
   margin-bottom: 10px;
 }
@@ -266,10 +266,16 @@ body {
   .draw {
     transform: scale(1.2);
   }
+  .error_container {
+    font-size: 1.2rem;
+  }
 } 
 
 @media only screen and (min-width: 1100px) {
   .draw {
     transform: scale(1.5);
+  }
+  .error_container {
+    font-size: 1.5rem;
   }
 } 

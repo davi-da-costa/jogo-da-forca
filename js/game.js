@@ -81,6 +81,7 @@ function adivinha(letters) {
         error_container.textContent = "Você perdeu... Tente novamente!"
         input.style.display = "none"
         playSound('error')
+        document.querySelector('.fake_input').blur()
       } else if (
         document.querySelector(".right_arm").style.visibility === "visible"
       ) {
@@ -111,6 +112,7 @@ function adivinha(letters) {
       error_container.textContent = "PARABÉNS!!!"
       input.style.display = "none"
       playSound('success')
+      document.querySelector('.fake_input').blur()
     }
   })
 }
